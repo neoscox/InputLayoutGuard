@@ -2,7 +2,7 @@
 
 An SKSE plugin for Skyrim SE/AE/VR. It stops one broken mesh from turning every NPC face black (or sky-blue), and names the mesh that caused it.
 
-- **Download:** Nexus Mods only (link TBD). This repository hosts the source code; no binaries are published here.
+- **Download:** [Nexus Mods](https://www.nexusmods.com/skyrimspecialedition/mods/198519) only. This repository hosts the source code; no binaries are published here.
 - **Players:** the Nexus Mods page explains the symptom, what the plugin does, requirements and how to read the log.
 - Each Nexus file is built from the matching version tag in this repository, e.g. `v1.0.0`.
 
