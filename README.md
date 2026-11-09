@@ -2,8 +2,9 @@
 
 An SKSE plugin for Skyrim SE/AE/VR. It stops one broken mesh from turning every NPC face black (or sky-blue), and names the mesh that caused it.
 
+- **Download:** Nexus Mods only (link TBD). This repository hosts the source code; no binaries are published here.
 - **Players:** the Nexus Mods page explains the symptom, what the plugin does, requirements and how to read the log.
-- **Download:** Nexus Mods (link TBD) or the [Releases](../../releases) page.
+- Each Nexus file is built from the matching version tag in this repository, e.g. `v1.0.0`.
 
 ## How it works
 
@@ -31,7 +32,7 @@ build.bat                          :: build + package InputLayoutGuard-<version>
 build.bat "C:\path\to\mod folder"  :: ...and copy the DLL into <folder>\SKSE\Plugins
 ```
 
-The first build compiles CommonLibSSE-NG and takes a while. CI builds every push and attaches the zip to tagged releases (`.github/workflows/build.yml`).
+The first build compiles CommonLibSSE-NG and takes a while. CI (`.github/workflows/build.yml`) builds every push to check that the source compiles.
 
 ## Repository layout
 
