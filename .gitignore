@@ -1,0 +1,6 @@
+build/
+dist/package/
+*.zip
+.vs/
+*.user
+build.local.bat
