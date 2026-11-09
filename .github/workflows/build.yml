@@ -14,15 +14,15 @@ jobs:
   build:
     runs-on: windows-2022
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           submodules: recursive
 
       - name: Set up vcpkg
         uses: lukka/run-vcpkg@v11
         with:
-          # same commit as builtin-baseline in vcpkg.json
-          vcpkgGitCommitId: 099fb9250d916511782bf5215f01f2e7141beb3a
+          # the vcpkg tool revision the release builds use; package versions still come from builtin-baseline in vcpkg.json
+          vcpkgGitCommitId: 9e44ec0e9f247d77c230ced0ee66c76296837807
 
       - name: Build
         run: cmake --workflow --preset release-msvc
